@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>e-commerce</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">E-commerce</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="text-center" href="#">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                Canasta
+              </a>
+            </li>
+            <li>
+              <a class="text-center" href="#">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container push-top--half">
+
+    <div class="col-md-3">
+      <div class="input-group push-bottom">
+        <input type="text" class="form-control" placeholder="Buscar camisetas">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+
+      <div class="visible-md-block visible-lg-block">
+        <h4>Categorías</h4>
+        <div class="list-group">
+            <a class="list-group-item active" href="#">
+              <span class="badge">100</span>
+              Todos
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">4</span>
+              Hombre
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">12</span>
+              Mujer
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">24</span>
+              Hipster
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">6</span>
+              Metal
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">5</span>
+              Universidad
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">8</span>
+              Deportiva
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">11</span>
+              Rayas
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="badge">19</span>
+              Apretada
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <section class="slider-main push-bottom--half">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <a href="#">
+                <img src="images/content/carrusel/banner-slider-1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="images/content/carrusel/banner-slider-2.jpg" alt="...">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="images/content/carrusel/banner-slider-3.jpg" alt="...">
+              </a>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="images/content/productos/camiseta-1.jpg" alt="">
+              <div class="caption">
+                <h4>Hipster Ultimate</h4>
+                <p>La camiseta ideal para hipsters.</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#modalProduct-1">Detalles</a>
+                </p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalProduct-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Hipster Ultimate</h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="alert alert-info" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Info:</span>
+                        Este producto está agotado.
+                      </div>
+                      <div class="row push-bottom">
+                        <div class="col-sm-6">
+                          <img src="images/content/productos/camiseta-1.jpg" alt="Camiseta Hipster Ultimate" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="product-price">Precio: <strong>$299</strong></p>
+                          <p class="product-rating">
+                            <ul class="list-unstyled list-rating">
+                              <span>Calificación:</span>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star-empty"></li>
+                            </ul>
+                          </p>
+                          <div class="product-tags push-bottom--mid">
+                            <a class="label label-warning" href="#">Hipster</a>
+                            <a class="label label-default" href="#">Deportiva</a>
+                          </div>
+                          <div class="product-like-it">
+                            <a href="#" class="">
+                              <span class="glyphicon glyphicon-heart"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-comments">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active">
+                            <a href="#product-1-description" aria-controls="product-1-description" role="tab" data-toggle="tab">Descripción</a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#product-1-comments" aria-controls="product-1-comments" role="tab" data-toggle="tab">Comentarios</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane fade in active" id="product-1-description">
+                            <div class="soft--mid">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Earum repudiandae, illo veritatis eius nostrum error nemo quidem,
+                                quo iure aliquid sed modi possimus similique, a laboriosam dolorem
+                                impedit explicabo iste!</p>
+                            </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="product-1-comments">
+                            <div class="soft--mid">
+                              <div class="product-comment panel panel-default">
+                                <div class="panel-heading"><strong>Germán Escobar</strong> comentó hace 2 días</div>
+                                <div class="panel-body">
+                                  <p>Esta camiseta esta increíble, la quiero!</p>
+                                </div>
+                              </div>
+                              <div class="product-add-comment">
+                                <textarea class="form-control" placeholder="Ingresa tu comentario" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--/modal-body-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!--/modal-->
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="images/content/productos/camiseta-2.jpg" alt="">
+              <div class="caption">
+                <h4>On Motion Live</h4>
+                <p>Perfecta para salidas rocosas.</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#modalProduct-2">Detalles</a>
+                </p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalProduct-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">On Motion Live</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row push-bottom">
+                        <div class="col-sm-6">
+                          <img src="images/content/productos/camiseta-2.jpg" alt="Camiseta Hipster Ultimate" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="product-price">Precio: <strong>$299</strong></p>
+                          <p class="product-rating">
+                            <ul class="list-unstyled list-rating">
+                              <span>Calificación:</span>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                            </ul>
+                          </p>
+                          <div class="product-tags push-bottom--mid">
+                            <a class="label label-warning" href="#">Hipster</a>
+                            <a class="label label-default" href="#">Deportiva</a>
+                          </div>
+                          <div class="product-like-it">
+                            <a href="#" class="">
+                              <span class="glyphicon glyphicon-heart"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-comments">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active">
+                            <a href="#product-2-description" aria-controls="product-2-description" role="tab" data-toggle="tab">Descripción</a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#product-2-comments" aria-controls="product-2-comments" role="tab" data-toggle="tab">Comentarios</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane fade in active" id="product-2-description">
+                            <div class="soft--mid">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repudiandae, illo veritatis eius nostrum error nemo quidem, quo iure aliquid sed modi possimus similique, a laboriosam dolorem impedit explicabo iste!</p>
+                            </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="product-2-comments">
+                            <div class="soft--mid">
+                              <div class="product-comment panel panel-default">
+                                <div class="panel-heading"><strong>Germán Escobar</strong> comentó hace 2 días</div>
+                                <div class="panel-body">
+                                  <p>Esta camiseta esta increíble, la quiero!</p>
+                                </div>
+                              </div>
+                              <div class="product-add-comment">
+                                <textarea class="form-control" placeholder="Ingresa tu comentario" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--/modal-body-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!--/modal-->
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="images/content/productos/camiseta-3.jpg" alt="">
+              <div class="caption">
+                <h4>Underground Max</h4>
+                <p>Para los amantes underground.</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#modalProduct-3">Detalles</a>
+                </p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalProduct-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Underground Max</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row push-bottom">
+                        <div class="col-sm-6">
+                          <img src="images/content/productos/camiseta-3.jpg" alt="Camiseta Hipster Ultimate" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="product-price">Precio: <strong>$299</strong></p>
+                          <p class="product-rating">
+                            <ul class="list-unstyled list-rating">
+                              <span>Calificación:</span>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star-empty"></li>
+                            </ul>
+                          </p>
+                          <div class="product-tags push-bottom--mid">
+                            <a class="label label-warning" href="#">Hipster</a>
+                            <a class="label label-default" href="#">Deportiva</a>
+                          </div>
+                          <div class="product-like-it">
+                            <a href="#" class="">
+                              <span class="glyphicon glyphicon-heart"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-comments">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active">
+                            <a href="#product-3-description" aria-controls="product-3-description" role="tab" data-toggle="tab">Descripción</a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#product-3-comments" aria-controls="product-3-comments" role="tab" data-toggle="tab">Comentarios</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane fade in active" id="product-3-description">
+                            <div class="soft--mid">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repudiandae, illo veritatis eius nostrum error nemo quidem, quo iure aliquid sed modi possimus similique, a laboriosam dolorem impedit explicabo iste!</p>
+                            </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="product-3-comments">
+                            <div class="soft--mid">
+                              <div class="product-comment panel panel-default">
+                                <div class="panel-heading"><strong>Germán Escobar</strong> comentó hace 2 días</div>
+                                <div class="panel-body">
+                                  <p>Esta camiseta esta increíble, la quiero!</p>
+                                </div>
+                              </div>
+                              <div class="product-add-comment">
+                                <textarea class="form-control" placeholder="Ingresa tu comentario" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--/modal-body-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!--/modal-->
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="images/content/productos/camiseta-4.jpg" alt="">
+              <div class="caption">
+                <h4>Santo Domingo Tigers</h4>
+                <p>En honor a este gran equipo.</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#modalProduct-4">Detalles</a>
+                </p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalProduct-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Santo Domingo Tigers</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="alert alert-success" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Info:</span>
+                        Este producto está en promoción.
+                      </div>
+                      <div class="row push-bottom">
+                        <div class="col-sm-6">
+                          <img src="images/content/productos/camiseta-4.jpg" alt="Camiseta Hipster Ultimate" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="product-price">Precio: <strong>$19.99</strong></p>
+                          <p class="product-rating">
+                            <ul class="list-unstyled list-rating">
+                              <span>Calificación:</span>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                            </ul>
+                          </p>
+                          <div class="product-tags push-bottom--mid">
+                            <a class="label label-warning" href="#">Hipster</a>
+                            <a class="label label-default" href="#">Deportiva</a>
+                          </div>
+                          <div class="product-like-it">
+                            <a href="#" class="">
+                              <span class="glyphicon glyphicon-heart"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-comments">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active">
+                            <a href="#product-4-description" aria-controls="product-4-description" role="tab" data-toggle="tab">Descripción</a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#product-4-comments" aria-controls="product-4-comments" role="tab" data-toggle="tab">Comentarios</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane fade in active" id="product-4-description">
+                            <div class="soft--mid">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repudiandae, illo veritatis eius nostrum error nemo quidem, quo iure aliquid sed modi possimus similique, a laboriosam dolorem impedit explicabo iste!</p>
+                            </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="product-4-comments">
+                            <div class="soft--mid">
+                              <div class="product-comment panel panel-default">
+                                <div class="panel-heading"><strong>Germán Escobar</strong> comentó hace 2 días</div>
+                                <div class="panel-body">
+                                  <p>Esta camiseta esta increíble, la quiero!</p>
+                                </div>
+                              </div>
+                              <div class="product-add-comment">
+                                <textarea class="form-control" placeholder="Ingresa tu comentario" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--/modal-body-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-success">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!--/modal-->
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="images/content/productos/camiseta-5.jpg" alt="">
+              <div class="caption">
+                <h4>Una Camiseta más</h4>
+                <p>Nunca sobra una así cool.</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#modalProduct-5">Detalles</a>
+                </p>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalProduct-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Hipster Ultimate</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Info:</span>
+                        Este producto ha sido descontinuado.
+                      </div>
+                      <div class="row push-bottom">
+                        <div class="col-sm-6">
+                          <img src="images/content/productos/camiseta-5.jpg" alt="Camiseta Hipster Ultimate" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="product-price">Precio: <strong>$299</strong></p>
+                          <p class="product-rating">
+                            <ul class="list-unstyled list-rating">
+                              <span>Calificación:</span>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star"></li>
+                              <li class="glyphicon glyphicon-star-empty"></li>
+                              <li class="glyphicon glyphicon-star-empty"></li>
+                              <li class="glyphicon glyphicon-star-empty"></li>
+                            </ul>
+                          </p>
+                          <div class="product-tags push-bottom--mid">
+                            <a class="label label-warning" href="#">Hipster</a>
+                            <a class="label label-default" href="#">Deportiva</a>
+                          </div>
+                          <div class="product-like-it">
+                            <a href="#" class="">
+                              <span class="glyphicon glyphicon-heart"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-comments">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active">
+                            <a href="#product-5-description" aria-controls="product-5-description" role="tab" data-toggle="tab">Descripción</a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#product-5-comments" aria-controls="product-5-comments" role="tab" data-toggle="tab">Comentarios</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane fade in active" id="product-5-description">
+                            <div class="soft--mid">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repudiandae, illo veritatis eius nostrum error nemo quidem, quo iure aliquid sed modi possimus similique, a laboriosam dolorem impedit explicabo iste!</p>
+                            </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="product-5-comments">
+                            <div class="soft--mid">
+                              <div class="product-comment panel panel-default">
+                                <div class="panel-heading">
+                                  <strong>No hay comentarios para esta camiseta.</strong>
+                                </div>
+                              </div>
+                              <div class="product-add-comment">
+                                <textarea class="form-control" placeholder="Ingresa tu comentario" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--/modal-body-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!--/modal-->
+            </div>
+          </div>
+        </div><!--/row-->
+      </section><!--/products-->
+    </div>
+  </div><!--/container-->
+</body>
+</html>

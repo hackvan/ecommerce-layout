@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.push {
+  margin: 20px;
+}
+
+.push-bottom--mid {
+  margin-bottom: 10px;
+}
+
+.push-bottom {
+  margin-bottom: 20px;
+}
+
+.push-bottom--half {
+  margin-bottom: 30px;
+}
+
+.push-top--half {
+  margin-top: 30px;
+}
+
+.soft {
+  padding: 20px;
+}
+
+.soft--mid {
+  padding: 10px;
+}
+
+.list-rating .glyphicon:hover {
+  color: #f0ad4e;
+  cursor: pointer;
+}
+
+.panel-body:last-child {
+  padding-bottom: 0;
+}
